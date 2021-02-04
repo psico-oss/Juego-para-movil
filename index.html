@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pong</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/buttercake@4.0.0/dist/css/butterCake.min.css">
+    <link href="estilo.css" rel="stylesheet" />
+  </head>
+  <body>
+      <div class="contenedor">
+    <div id="menu">
+        <img  id="sonidooff" class="ocultar" src="imagenes/sonidooff.png" width="50px" height="50px"> </img>
+        <img  id="sonido" class="animate__animated animate__bounceIn" src="imagenes/sonido.png" width="50px" height="50px"> </img>
+        <div id="boton"> <button id="jugar" type="button"  class="btn dark rounded">Comenzar</button>  </div>
+    </div>
+    <div id="nivelP" class="ocultar">
+     <button id="jugarP" type="button"  class="btn dark rounded">Empezar</button> </div>
+     <div id="nivelM" class="ocultar">
+        <button id="jugarM" type="button"  class="btn dark rounded">Continuar</button> </div>
+      <div id="nivelB" class="ocultar">
+        <button id="jugarB" type="button"  class="btn dark rounded">Desbloquear</button> </div>
+        <div id="gameOver" class="ocultar">         
+            <div id="rodea2">  
+            <h2>Score:</h2>
+            <div id="puntos"></div>
+            <button id="reintentar" type="button"  class="btn dark rounded">Reintentar</button>  
+          </div>
+        </div>
+        <div id="win" class="ocultar">
+            <h2>Score:</h2>
+            <div id="puntosW"></div>
+            <button id="reintentarW" type="button"  class="btn dark rounded">Reintentar</button>  
+        </div>
+  <div class="recubrir">
+    <canvas id="myCanvas" width="650" height="400" > 
+    </canvas>
+  </div>
+  <div id="game" class="ocultar">
+  </div>
+    <div id="controles">
+      <button id="izquierda" class="btn secondary outline">
+      <img  class="animate__animated animate__bounceIn" src="imagenes/izquierda.png" width="100px" height="100px"> </img>
+    </button>
+    <button id="derecha"  class="btn secondary outline" >
+      <img  class="animate__animated animate__bounceIn" src="imagenes/derecha.png" width="100px" height="100px"> </img></button>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/buttercake@4.0.0/dist/js/butterCake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

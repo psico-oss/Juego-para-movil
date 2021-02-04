@@ -1,0 +1,371 @@
+body {
+  background-color: white;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-family: tahoma;
+  color: skyblue;
+}
+@font-face {
+  font-family: "04B";
+  src: url("fonts/04B.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.contenedor {
+  width: 100%;
+  height: 100%;
+}
+#menu {
+  background-image: url("imagenes/Fondo.gif");
+  background-size: auto;
+  margin: 0 auto;
+  width: 650px;
+  height: 400px;
+  text-align: top;
+  border: black 10px solid;
+}
+#nivelP {
+  background-image: url("imagenes/panta1.gif");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 650px;
+  height: 400px;
+  border: black 13px solid;
+  text-align: center;
+}
+#nivelM {
+  background-image: url("imagenes/panta2.gif");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 650px;
+  height: 400px;
+  border: black 13px solid;
+  text-align: center;
+}
+#nivelB {
+  background-image: url("imagenes/pantaB.gif");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 650px;
+  height: 400px;
+  border: black 13px solid;
+  text-align: center;
+}
+#gameOver {
+  background-image: url("imagenes/gameOver.jpg");
+  margin: 0 auto;
+  width: 650px;
+  height: 400px;
+  border: black 13px solid;
+  text-align: center;
+}
+#win {
+  background-image: url("imagenes/ganaste.gif");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 650px;
+  height: 400px;
+  border: black 10px solid;
+  text-align: center;
+}
+#boton {
+  text-align: center;
+}
+#sonido {
+  margin: 15px;
+}
+#sonidooff {
+  margin: 15px;
+}
+#jugar {
+  margin: 120px;
+}
+#jugarP {
+  margin: 150px;
+}
+#jugarM {
+  margin: 150px;
+  color: #93e6ff !important;
+}
+#jugarB {
+  margin: 160px;
+  color: #93e6ff !important;
+}
+#rodea2 {
+  margin: 150px;
+  color: #93e6ff !important;
+}
+#reintentarW {
+  margin: 150px;
+}
+h2 {
+  color: #93e6ff !important;
+}
+#puntos {
+  color: #93e6ff !important;
+  font-size: 30px;
+}
+#puntosW {
+  color: #93e6ff !important;
+  font-size: 30px;
+}
+#myCanvas {
+  display: none;
+  margin: 0 auto;
+  border: black 10px solid;
+}
+#controles {
+  text-align: center;
+  display: none;
+  margin: 0 auto;
+  max-width: 300px;
+  min-height: 300px;
+}
+
+.ocultar {
+  display: none;
+}
+.btn.dark {
+  font-family: "04B";
+  color: #f559e0 !important;
+}
+#jugarP {
+  color: #93e6ff !important;
+}
+
+@media (max-width: 1208px) {
+  body {
+    background-color: black;
+  }
+  .contenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #menu {
+    background-image: url(imagenes/Fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin: 0% 10%;
+    border: black 10px solid;
+  }
+  #nivelP {
+    background-image: url(imagenes/panta1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin: 0% 10%;
+    border: black 10px solid;
+  }
+  #nivelM {
+    background-image: url(imagenes/panta2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin: 0% 10%;
+    border: black 10px solid;
+  }
+  #nivelB {
+    background-image: url(imagenes/pantaB.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin: 0% 10%;
+    border: black 10px solid;
+  }
+  #gameOver {
+    background-image: url(imagenes/gameOver.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin: 0% 10%;
+    border: black 10px solid;
+  }
+  #win {
+    background-image: url(imagenes/ganaste.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin: 0% 10%;
+    border: black 10px solid;
+  }
+}
+@media (max-width: 720px) {
+  body {
+    background-color: black;
+  }
+  .contenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #menu {
+    background-image: url(imagenes/Fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(40% + 9%);
+    width: 100%;
+    border: black 10px solid;
+  }
+  #nivelP {
+    background-image: url(imagenes/panta1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(40% + 9%);
+    width: 100%;
+    border: black 10px solid;
+  }
+  #nivelM {
+    background-image: url(imagenes/panta2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(40% + 9%);
+    width: 100%;
+    border: black 10px solid;
+  }
+  #nivelB {
+    background-image: url(imagenes/pantaB.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(40% + 9%);
+    width: 100%;
+    border: black 10px solid;
+  }
+  #gameOver {
+    background-image: url(imagenes/gameOver.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(40% + 9%);
+    width: 100%;
+    border: black 10px solid;
+  }
+  #myCanvas {
+    width: 100%;
+  }
+  #win {
+    background-image: url(imagenes/ganaste.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(40% + 9%);
+    width: 100%;
+    border: black 10px solid;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    background-color: black;
+  }
+  .contenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #menu {
+    background-image: url(imagenes/Fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    border: black 10px solid;
+  }
+  #nivelP {
+    background-image: url(imagenes/panta1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    border: black 10px solid;
+  }
+  #nivelM {
+    background-image: url(imagenes/panta2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    border: black 10px solid;
+  }
+  #myCanvas {
+    width: 100%;
+  }
+  #nivelB {
+    background-image: url(imagenes/pantaB.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    border: black 10px solid;
+  }
+  #gameOver {
+    background-image: url(imagenes/gameOver.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    border: black 10px solid;
+  }
+  #win {
+    background-image: url(imagenes/ganaste.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    border: black 10px solid;
+  }
+
+  #jugar {
+    margin: 0px;
+  }
+  #rodea2 {
+    margin: 0px;
+  }
+  #reintentarW {
+    margin: 0px;
+  }
+  #jugarP {
+    margin: 100px;
+  }
+  #jugarM {
+    margin: 110px;
+  }
+  #jugarB {
+    margin: 120px;
+  }
+}

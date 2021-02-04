@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "pong",
+      "package_name": "xyz.appmaker.opkern",
+      "sha256_cert_fingerprints": [
+        "2C:39:C0:B8:3C:AB:39:6B:71:D0:D9:B6:C4:D0:09:B0:A8:C1:A7:4B:7C:CA:BA:17:95:D0:A0:6C:D2:5F:71:66"
+      ]
+    }
+  }
+]
